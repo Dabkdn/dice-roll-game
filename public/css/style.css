@@ -1,0 +1,167 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.spacer {
+    flex: 1;
+}
+
+hr {
+    background-color: #fff;
+    border-top: 2px dotted #8c8b8b;
+}
+
+.footer{
+    background-color: #331a00;
+    vertical-align:bottom;
+    color: #ffffff;
+}
+#input-city {
+    color: royalblue;
+    display: block;
+    width: 100%;
+}
+#weather-btn {
+    color: red;
+    display: block;
+    width: 100%;
+}
+#output-weather {
+    color: royalblue;
+}
+#login {
+    color: black;
+    background-color: aqua;
+    border-radius: 4px;
+    border: 2px solid black;
+    padding: 20px;
+    display: inline-block;
+}
+
+#welcome {
+    margin: 0;
+    border-left: 1px solid lightgrey;
+    padding-left: 30px;
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+#temp, #city, #error {
+    text-align: center;
+}
+
+#register-form input[type=text], #register-form input[type=password] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit], #ajax-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+input[type=submit]:hover, #ajax-btn:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#submit-register {
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#login-form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background: beige;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#login-form input[type=text], #login-form input[type=password] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #ffc180;
+  margin-bottom: 10px;
+}
+
+#login-form input[type=submit] {
+  float: right;
+}
+
+/* nav bar */
+.navbar {
+  background-color: #ffce99
+}
+
+#weather-form input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #ffc180;
+  margin-bottom: 10px;
+}
+
+#register-form > p {
+  color: #ff0000;
+  margin: 0;
+  margin-left: 280px;
+}
+
+#login-form > p {
+  text-align: left;
+  color: #ff0000;
+  margin: 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include ./include/head %>
+    <body>
+        <% include ./include/nav %>
+        <div class="container">
+            <div class="row">
+                <h1>weather forecast</h1>
+                <div id='spinner'><img src="/images/spinner.gif" style="width: 50px;"/></div>
+            </div>
+            <hr>
+            <div class="">
+                <form action="/weather" method="get" onsubmit="'?city='+city.value" id="weather-form">
+                    <p>Get weather city</p>
+                    <input type="text" id="input-city" name="city" placeholder="enter a city">
+                    <input type="submit" value="get weather">
+                </form>
+
+                <button id="ajax-btn">Ajax get weather</button>
+
+                <p id="error"><%= locals.error? error:null%></p>
+
+                <p id="temp"><%= locals.temp? temp:null %></p>
+                <p id="city"><%= locals.city? city:null %></p>
+
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <script src="/js/weather_city.js"></script>
+        <% include ./include/footer %>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html lang="en">
+<% include ./include/head %>
+    <link rel="stylesheet" href="/css/dice_roller.css">
+
+    <body id="dice_roller">
+        <% include ./include/nav %>
+            <div class="container" id="dice-container">
+                <h1></h1>
+                <div class="row">
+                    <div class="col-sm-6 left-side">
+                        <div id="main_container">
+
+                            <div id="title">
+                                <h1>shake...</h1>
+                            </div>
+
+                            <div class="dice_container">
+                                <div class="die_face" id="die_1">
+                                    <div class="pip pip_1" id="die_1_pip_1"></div>
+                                    <div class="pip pip_2" id="die_1_pip_2"></div>
+                                    <div class="pip pip_3" id="die_1_pip_3"></div>
+                                    <div class="pip pip_4" id="die_1_pip_4"></div>
+                                    <div class="pip pip_5" id="die_1_pip_5"></div>
+                                    <div class="pip pip_6" id="die_1_pip_6"></div>
+                                    <div class="pip pip_7" id="die_1_pip_7"></div>
+                                </div>
+
+                                <div class="die_face" id="die_2">
+                                    <div class="pip pip_1" id="die_2_pip_1"></div>
+                                    <div class="pip pip_2" id="die_2_pip_2"></div>
+                                    <div class="pip pip_3" id="die_2_pip_3"></div>
+                                    <div class="pip pip_4" id="die_2_pip_4"></div>
+                                    <div class="pip pip_5" id="die_2_pip_5"></div>
+                                    <div class="pip pip_6" id="die_2_pip_6"></div>
+                                    <div class="pip pip_7" id="die_2_pip_7"></div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="" id="shaker">
+                                <button>Shake 'em'!</button>
+                            </div> -->
+                        </div>
+                        <div id="prepare-container">
+                            <div id="dice-second">
+                                <h1>0</h1>
+                            </div>
+                            <div id="dice-coin">
+                                <label for="coin">Coin:</label>
+                                <input type="text" name="coin">
+                            </div>
+                            <div id="dice-choice">
+                                <a id="odd">Odd</a>
+                                <a id="even">Even</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" class="right-side">
+                        <div id="dice-result">
+                            <h1>Current coin: <span id="coin"></span></h1>
+                            <hr>
+                            <h1>Result</h1>
+                            <div id="dice-result-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+            <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+            <script src="/js/dice_roller.js"></script>
+            <% include ./include/footer %>
+    </body>
+
+</html>

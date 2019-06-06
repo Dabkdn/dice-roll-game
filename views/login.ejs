@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include ./include/head %>
+    <body>
+        <% include ./include/nav %>
+        
+        <div class="container">
+            <form action="/login" method="post" id="login-form">
+                <h3>Sign in to Weather forecast</h3>
+                <div>
+                    <input type="text" id="username" name="username" placeholder="">
+                </div>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="">
+                </div>
+                
+                <div>
+                    <input type="submit" value="Sign in">
+                </div>
+                <p><%=locals.message? message:null %></p>
+            </form>
+        </div>
+        <div class="spacer"></div>
+        <% include ./include/footer %>
+    </body>
+</html>

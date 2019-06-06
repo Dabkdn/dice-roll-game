@@ -1,0 +1,111 @@
+body#dice_roller {
+	background: #F5F5DC;
+	text-align: center;
+	color: #1d113b;
+	overflow-x: hidden;
+}
+#dice_roller .shake {
+	animation: shake 1s;
+}
+#dice_roller #shaker button {
+    background-color: #287811;
+    color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #37a417;
+    padding: 10px 20px;
+    margin: 10px;
+}
+#dice_roller #shaker button:hover {
+    background-color: transparent;
+    color: #287811;
+}
+#dice_roller .die_face {
+	position: relative;
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background-color: #37a417;
+	margin: 50px 20px;
+	border-radius: 5px;
+}
+#dice_roller .pip {
+	position: absolute;
+	height: 33px;
+	width: 33px;
+	margin: 9px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+#dice_roller .pip_1 {
+	top: 3px;
+	left: 3px;
+}
+#dice_roller .pip_2 {
+	top: 50px;
+	left: 3px;
+}
+#dice_roller .pip_3 {
+	top: 97px;
+	left: 3px;
+}
+#dice_roller .pip_4 {
+	top: 50px;
+	left: 50px;
+}
+#dice_roller .pip_5 {
+	top: 3px;
+	right: 3px;
+}
+#dice_roller .pip_6 {
+	right: 3px;
+	top: 50px;
+}
+#dice_roller .pip_7{
+	right: 3px;
+	top: 97px;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(10px, 0, 0);
+    }
+}
+/* dice game odd even */
+#dice-second h1 {
+	font-size: 100px;
+}
+#dice-coin input {
+	border-radius: 4px;
+	border: 1px solid #000000;
+
+}
+#dice-choice a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #287811;
+	border-radius: 4px;
+	border: 1px solid #37a417;
+	padding: 10px 20px;
+}
+#dice-choice a:hover {
+	background-color: #ffffff;
+	color: #287811;
+}
+#dice_roller .left-side {
+	border: 1px solid #000000;
+	border-radius: 4px;
+	padding: 40px;
+}
+/* end dice game odd even */
